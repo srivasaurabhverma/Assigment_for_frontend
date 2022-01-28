@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(252, 252, 252); */
+}
+
+/* CSS FOR BOX */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  z-index: 1100;
+  /* background-color:white; */
+}
+ 
+
+.scroll {
+  background-color: white !important;
+  transition: 0.8s;
+}
+
+.navbar > .logo {
+  width: 100px;
+  margin-left: 60px;
+}
+.all_a_tags {
+  height: 60%;
+  margin-top: 10px;
+  display: flex;
+  margin-left: 10px;
+}
+.all_a_tags > .nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 60px;
+  height: 40px;
+  margin-left: 40px;
+  color: black;
+}
+
+.nav_links:hover {
+  background-color: gainsboro;
+}
+/* Home Page */
+.first_image {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.left {
+  position: relative;
+  top: 20%;
+  left: 20%;
+  width: fit-content;
+  height: fit-content;
+}
+.left_container > .title {
+  font-size: 3.863rem;
+  font-family: "Poppins", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
+    "Helvetica Neue", "Roboto", "Arial", "sans-serif", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #100f22;
+  font-weight: 600;
+}
+
+.left_container > .descreption {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 15px; */
+  line-height: 1.54;
+  font-family: "Roboto", sans-serif;
+  color: #100f22;
+  margin-top: 25px;
+}
+.left_container > .form {
+  margin-top: 30px;
+  width: 84%;
+  border: 1px solid rgb(155, 154, 162);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.form > #email {
+  margin-left: 20px;
+  background-color: none;
+  padding: 15px;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  display: block;
+  outline: none;
+}
+::placeholder {
+  font-family: "Poppins";
+  color: rgb(155, 154, 162);
+  font-weight: 400;
+}
+.form > .home_btn {
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+  outline: none;
+  background-color: #4a59ea;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Poppins";
+  border: none;
+  border-radius: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 160px;
+  height: 45px;
+  margin-left: auto;
+  right: 4px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(113, 52, 255);
+}
+.selling_foods {
+  clip-path: polygon(51% 0, 100% 0%, 100% 100%, 44% 100%);
+  height: 100vh;
+}
+
+.second_image {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.cards {
+  width: 545px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* background-color: rebeccapurple; */
+  /* margin-left: -16px; */
+  height: 540px;
+}
+
+.card {
+  /* width: %; */
+  width: 40%;
+  height: 33%;
+  /* border: 2px solid black; */
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: -9px -9px 27px #ffffff, 9px 9px 27px rgb(174 174 192 / 40%);
+  background-color: #fff;
+  color: #100f22;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0.3ms;
+  border-radius: 10px;
+}
+.card > img {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 40px;
+}
+
+.card > .card_title {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Poppins", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+    "Helvetica Neue", Roboto, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.313rem;
+}
+
+.card > .card_descreption {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 90% !important;
+  text-align: left;
+  width: fit-content;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Roboto, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #626262;
+  margin-top: 4px;
+  font-size: 0.75rem;
+}
+
+.festival_pic {
+  clip-path: polygon(50.7% 0, 100% 0%, 100% 100%, 47% 100%);
+
+  height: 120vh;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+
+  top: -4px;
+}
+
+.change_size {
+  clip-path: polygon(40% 0, 100% 0%, 100% 100%, 36% 100%);
+  grid-template-columns: auto;
+  position: relative;
+  opacity: 0.9;
+  top: -5px;
+}
+
+.change_size_1 {
+  clip-path: polygon(36% 0, 100% 0%, 100% 100%, 33% 100%);
+  height: 106vh;
+  top: -10px;
+}
+.change_size_2 {
+  clip-path: polygon(33% 0, 100% 0%, 100% 100%, 30% 100%);
+  height: 79.3vh;
+  top: -20px;
+}
+.change_size_3 {
+  clip-path: polygon(30% 0, 100% 0%, 100% 100%, 26% 100%);
+  height: 106vh;
+  top: -25px;
+}
+.change_size_4 {
+  clip-path: polygon(26% 0, 100% 0%, 100% 100%, 22% 100%);
+  height: 100vh;
+  top: -30px;
+}
+.change_size_5 {
+  clip-path: polygon(22% 0, 100% 0%, 100% 100%, 18% 100%);
+  height: 105.7vh;
+  top: -50px;
+}
+.last__ {
+  width: fit-content;
+  height: 98.8vh !important;
+}
+
+/* Footer */
+.footer_ {
+  position: relative;
+  min-height: calc(100vh - 230px);
+  background-color: rgb(245, 245, 245);
+}
+
+.footer_logo {
+  margin-top: 130px;
+  margin-left: 150px;
+}
+.footer_links {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin-left: 450px;
+  margin-top: -45px;
+}
+.link_ {
+  color: #100f22;
+  text-decoration: none;
+  width: 130px;
+  height: 25px;
+  margin-top: 10px;
+  /* background-color: red; */
+  font-weight: 400;
+  font-family: "Poppins";
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_links :hover {
+  background-color: rgb(179, 179, 179);
+}
+.copyright {
+  margin-left: 150px;
+  margin-top: 100px;
+  color: #100f22;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-size: smaller;
+}
+.icons > img {
+  width: 25px;
+  margin-left: 15px;
+}
+
+.icons {
+  margin-left: 60vw;
+  margin-top: -30px;
+  width: fit-content;
+  cursor: pointer;
+}
